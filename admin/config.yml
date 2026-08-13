@@ -1,0 +1,47 @@
+# Backend configuration - connects to your GitHub repo via Netlify OAuth
+backend:
+  name: github
+  repo: christopherutom71-fullstack/MOZEEZ-Gadgets-Hub
+  branch: main
+
+# Where uploaded images are stored
+media_folder: "Assets/uploads"
+public_folder: "/Assets/uploads"
+
+# Collections - this defines what content the CMS manages
+collections:
+  - name: "products"
+    label: "Products"
+    label_singular: "Product"
+    folder: "_data/products" # Where product data files will be stored
+    create: true # Allow creating new products
+    slug: "{{slug}}" # Filename format
+    fields:
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Brand", name: "brand", widget: "string" }
+      - { label: "Price", name: "price", widget: "string", required: true }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: true,
+        }
+      - {
+          label: "Specifications",
+          name: "specs",
+          widget: "list",
+          fields: [{ label: "Spec", name: "spec", widget: "string" }],
+        }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["laptops", "phones", "accessories"],
+        }
+      - {
+          label: "In Stock",
+          name: "in_stock",
+          widget: "boolean",
+          default: true,
+        }

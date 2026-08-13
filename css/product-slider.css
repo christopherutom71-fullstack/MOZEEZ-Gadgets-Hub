@@ -1,0 +1,167 @@
+/* product-slider.css – self-contained, scoped under .product-slider */
+
+.product-slider .slider-wrapper {
+  position: relative;
+  border-radius: 32px;
+  touch-action: pan-y; /* Allow vertical scroll */
+}
+
+.product-slider .slider-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  padding: 4px 0;
+  touch-action: pan-y; /* Allow vertical scroll */
+  cursor: default;
+}
+
+.product-slider .slider-slide {
+  flex: 0 0 auto;
+  width: calc(100% / 1.2);
+  max-width: 400px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 640px) {
+  .product-slider .slider-slide {
+    width: calc(100% / 2.2);
+  }
+}
+@media (min-width: 1024px) {
+  .product-slider .slider-slide {
+    width: calc(100% / 3.2);
+  }
+}
+@media (min-width: 1280px) {
+  .product-slider .slider-slide {
+    width: calc(100% / 4.2);
+  }
+}
+
+.product-slider .slider-fade-left,
+.product-slider .slider-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.product-slider .slider-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #0a0a0f 20%, transparent);
+  opacity: 0;
+}
+.product-slider .slider-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #0a0a0f 20%, transparent);
+  opacity: 0;
+}
+.product-slider .slider-fade-left.visible {
+  opacity: 1;
+}
+.product-slider .slider-fade-right.visible {
+  opacity: 1;
+}
+
+.product-slider .slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+.product-slider .slider-dot.active {
+  background: #6c5ce7;
+  width: 28px;
+  border-radius: 6px;
+}
+.product-slider .slider-dot:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.product-slider .slider-btn {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.product-slider .slider-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+.product-slider .slider-btn:active {
+  transform: scale(0.92);
+}
+.product-slider .slider-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  transform: none;
+  pointer-events: none;
+}
+
+/* Glass card (reuse your existing .glass-card, but we keep it here for fallback) */
+.product-slider .glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+}
+.product-slider .glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
+}
+
+.product-slider .bg-surface-dim {
+  background: rgba(0, 0, 0, 0.25);
+}
+.product-slider .bg-surface-dim img,
+.product-slider .bg-surface-dim video {
+  max-height: 100%;
+  width: auto;
+  max-width: 85%;
+  object-fit: contain;
+}
+
+.product-slider .material-symbols-outlined {
+  font-family: "Material Symbols Outlined", "Segoe UI", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+.product-slider button .material-symbols-outlined::before {
+  content: "💬";
+  font-size: 18px;
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .product-slider .slider-slide {
+    min-width: 240px;
+    width: calc(100% / 1.1);
+  }
+  .product-slider .bg-surface-dim {
+    height: 180px; /* reduced from 64/72 */
+  }
+  .product-slider .p-6 {
+    padding: 16px;
+  }
+}

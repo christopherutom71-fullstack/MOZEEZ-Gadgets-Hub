@@ -1,0 +1,2109 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+    <title>Mozeez Gadget Hub | Precision Engineering</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Geist+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/product-slider.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#e2e1eb",
+              "inverse-on-surface": "#2f3037",
+              "surface-container-highest": "#33343c",
+              outline: "#8d90a0",
+              "secondary-fixed": "#d8e2ff",
+              error: "#ffb4ab",
+              "on-secondary-fixed-variant": "#004395",
+              tertiary: "#a4c9ff",
+              "surface-bright": "#383940",
+              "surface-variant": "#33343c",
+              "on-surface-variant": "#c3c6d7",
+              "on-tertiary": "#00315d",
+              "on-secondary-container": "#e6ecff",
+              "on-primary-fixed": "#00174b",
+              "surface-dim": "#12131a",
+              "error-container": "#93000a",
+              "inverse-primary": "#0053db",
+              "tertiary-container": "#196fc0",
+              "primary-fixed-dim": "#b4c5ff",
+              "surface-container-high": "#282a31",
+              "on-primary-fixed-variant": "#003ea8",
+              "surface-tint": "#b4c5ff",
+              "tertiary-fixed": "#d4e3ff",
+              "on-error": "#690005",
+              "on-secondary": "#002e6a",
+              "on-primary-container": "#eeefff",
+              "surface-container-low": "#1a1b22",
+              primary: "#b4c5ff",
+              "on-primary": "#002a78",
+              "primary-fixed": "#dbe1ff",
+              "secondary-container": "#0566d9",
+              "surface-container": "#1e1f26",
+              "on-tertiary-container": "#ebf1ff",
+              "on-tertiary-fixed-variant": "#004883",
+              "on-secondary-fixed": "#001a42",
+              "tertiary-fixed-dim": "#a4c9ff",
+              "outline-variant": "#434655",
+              "inverse-surface": "#e2e1eb",
+              background: "#0A0F1F",
+              "surface-container-lowest": "#0c0e14",
+              "on-surface": "#e2e1eb",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#001c39",
+              surface: "#12131a",
+              "secondary-fixed-dim": "#adc6ff",
+              "primary-container": "#2563eb",
+              secondary: "#adc6ff",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              "2xl": "20px",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "20px",
+              "margin-desktop": "64px",
+              "stack-md": "24px",
+              "container-max": "1280px",
+              "stack-lg": "48px",
+              "stack-sm": "12px",
+              gutter: "24px",
+            },
+            fontFamily: {
+              "body-sm": ["Inter"],
+              "label-caps": ["Inter"],
+              "body-lg": ["Inter"],
+              hero: ["Inter"],
+              h1: ["Inter"],
+              "mono-label": ["Geist Mono"],
+              "h1-mobile": ["Inter"],
+              "hero-mobile": ["Inter"],
+              h2: ["Inter"],
+            },
+            fontSize: {
+              "body-sm": [
+                "14px",
+                {
+                  lineHeight: "1.5",
+                  letterSpacing: "0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "label-caps": [
+                "12px",
+                { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "600" },
+              ],
+              "body-lg": [
+                "18px",
+                { lineHeight: "1.6", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              hero: [
+                "72px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.04em",
+                  fontWeight: "700",
+                },
+              ],
+              h1: [
+                "48px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "mono-label": [
+                "13px",
+                { lineHeight: "1", letterSpacing: "0em", fontWeight: "500" },
+              ],
+              "h1-mobile": [
+                "36px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "hero-mobile": [
+                "48px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "700",
+                },
+              ],
+              h2: [
+                "36px",
+                {
+                  lineHeight: "1.3",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0a0f1f;
+        color: #e2e1eb;
+        scroll-behavior: smooth;
+      }
+      .glass {
+        background: rgba(24, 33, 51, 0.6);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .accent-glow {
+        box-shadow: 0 0 40px rgba(37, 99, 235, 0.15);
+      }
+      .hover-accent-glow:hover {
+        box-shadow: 0 0 60px rgba(37, 99, 235, 0.3);
+        transform: translateY(-4px);
+        transition: all 0.3s ease;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .dot-matrix {
+        background-image: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.1) 1px,
+          transparent 1px
+        );
+        background-size: 24px 24px;
+      }
+      .timeline-line {
+        width: 2px;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          #2563eb,
+          transparent
+        );
+      }
+
+      /* ─── Floating Phone Component ─── */
+      .phone-hero {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        min-height: 500px;
+        perspective: 1200px;
+        touch-action: none;
+      }
+      .phone-hero .phone-wrapper {
+        transform-style: preserve-3d;
+        animation: floatMain 5s ease-in-out infinite;
+        transition: transform 0.05s ease-out;
+        will-change: transform;
+      }
+      .phone-hero .phone {
+        width: 220px;
+        height: 450px;
+        background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+        border-radius: 40px;
+        padding: 10px;
+        box-shadow:
+          0 50px 100px rgba(0, 0, 0, 0.6),
+          0 0 0 1px rgba(255, 255, 255, 0.06);
+        transform-style: preserve-3d;
+        margin: 0 auto;
+      }
+      .phone-hero .phone-screen {
+        width: 100%;
+        height: 100%;
+        background: #0f172a;
+        border-radius: 32px;
+        padding: 16px 14px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(4px);
+        position: relative;
+        overflow: hidden;
+        color: #f1f5f9;
+      }
+      .phone-hero .phone-screen::after {
+        content: "";
+        position: absolute;
+        top: -60%;
+        left: -60%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle at 30% 20%,
+          rgba(255, 255, 255, 0.03),
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .phone-hero .app-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 1;
+      }
+      .phone-hero .app-header h4 {
+        font-size: 15px;
+        font-weight: 600;
+        background: linear-gradient(to right, #fff, #94a3b8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .phone-hero .app-header .notif-badge {
+        width: 26px;
+        height: 26px;
+        background: #1e293b;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        position: relative;
+      }
+      .phone-hero .app-header .notif-badge::after {
+        content: "";
+        width: 7px;
+        height: 7px;
+        background: #ef4444;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        border: 2px solid #0f172a;
+      }
+      .phone-hero .product-img {
+        width: 64px;
+        height: 64px;
+        background: linear-gradient(145deg, #1e293b, #0f172a);
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        margin: 0 auto 8px auto;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        animation: pulseIcon 3s ease-in-out infinite;
+      }
+      .phone-hero .product-title {
+        text-align: center;
+        z-index: 1;
+      }
+      .phone-hero .product-title h3 {
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        color: #fff;
+      }
+      .phone-hero .product-title .brand {
+        font-size: 11px;
+        color: #64748b;
+        font-weight: 400;
+      }
+      .phone-hero .rating-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px 0 10px 0;
+        z-index: 1;
+        gap: 8px;
+      }
+      .phone-hero .rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+        color: #facc15;
+      }
+      .phone-hero .rating span {
+        color: #94a3b8;
+        font-weight: 400;
+      }
+      .phone-hero .price {
+        font-size: 17px;
+        font-weight: 700;
+        color: #38bdf8;
+        white-space: nowrap;
+      }
+      .phone-hero .price small {
+        font-size: 11px;
+        color: #64748b;
+        font-weight: 400;
+        text-decoration: line-through;
+        margin-left: 4px;
+      }
+      .phone-hero .specs {
+        display: flex;
+        justify-content: space-between;
+        background: rgba(30, 41, 59, 0.6);
+        border-radius: 14px;
+        padding: 8px 10px;
+        margin-bottom: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        z-index: 1;
+        backdrop-filter: blur(4px);
+        gap: 4px;
+      }
+      .phone-hero .spec-item {
+        text-align: center;
+        flex: 1;
+      }
+      .phone-hero .spec-item .value {
+        font-size: 13px;
+        font-weight: 600;
+        color: #f1f5f9;
+      }
+      .phone-hero .spec-item .label {
+        font-size: 9px;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+      }
+      .phone-hero .btn-cart {
+        background: linear-gradient(145deg, #2563eb, #1d4ed8);
+        border: none;
+        border-radius: 100px;
+        padding: 11px 0;
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: default;
+        margin-top: auto;
+        box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+        text-align: center;
+        z-index: 1;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      /* Glows */
+      .phone-hero .glow-ring {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        pointer-events: none;
+        animation: glowPulse 4s ease-in-out infinite alternate;
+        will-change: transform, opacity;
+      }
+      .phone-hero .glow-1 {
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 180, 255, 0.25),
+          transparent 70%
+        );
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .phone-hero .glow-2 {
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(
+          circle,
+          rgba(160, 80, 255, 0.2),
+          transparent 70%
+        );
+        top: 30%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        animation-delay: 0.8s;
+      }
+      .phone-hero .glow-3 {
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 255, 200, 0.12),
+          transparent 70%
+        );
+        bottom: 10%;
+        right: 10%;
+        transform: translate(50%, 50%);
+        animation-delay: 1.6s;
+      }
+      /* Orbit */
+      .phone-hero .orbit-ring {
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        pointer-events: none;
+        animation: spinRing 20s linear infinite;
+        will-change: transform;
+      }
+      .phone-hero .orbit-dot {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .phone-hero .orbit-dot:nth-child(1) {
+        background: #38bdf8;
+        box-shadow:
+          0 0 20px #38bdf8,
+          0 0 60px rgba(56, 189, 248, 0.3);
+      }
+      .phone-hero .orbit-dot:nth-child(2) {
+        top: 50%;
+        left: -4px;
+        transform: translateY(-50%);
+        background: #a78bfa;
+        box-shadow:
+          0 0 20px #a78bfa,
+          0 0 60px rgba(167, 139, 250, 0.3);
+      }
+      .phone-hero .orbit-dot:nth-child(3) {
+        top: 50%;
+        left: auto;
+        right: -4px;
+        transform: translateY(-50%);
+        background: #34d399;
+        box-shadow:
+          0 0 20px #34d399,
+          0 0 60px rgba(52, 211, 153, 0.3);
+      }
+      .phone-hero .orbit-dot:nth-child(4) {
+        top: auto;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f472b6;
+        box-shadow:
+          0 0 20px #f472b6,
+          0 0 60px rgba(244, 114, 182, 0.3);
+      }
+      /* Stats badges */
+      .phone-hero .stat-badge {
+        position: absolute;
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(16px) saturate(1.2);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 100px;
+        padding: 8px 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+        white-space: nowrap;
+        animation: floatBadge 4s ease-in-out infinite alternate;
+        transform-style: preserve-3d;
+        will-change: transform;
+        z-index: 10;
+      }
+      .phone-hero .stat-badge .stat-icon {
+        font-size: 16px;
+      }
+      .phone-hero .stat-badge .stat-number {
+        color: #38bdf8;
+        font-weight: 700;
+        margin-right: 2px;
+      }
+      .phone-hero .stat-badge .stat-label {
+        opacity: 0.7;
+        font-weight: 400;
+      }
+      .phone-hero .stat-1 {
+        top: 2%;
+        right: -8%;
+        animation-delay: 0s;
+      }
+      .phone-hero .stat-2 {
+        top: 28%;
+        left: -12%;
+        animation-delay: 1s;
+      }
+      .phone-hero .stat-3 {
+        bottom: 22%;
+        right: -10%;
+        animation-delay: 2s;
+      }
+      .phone-hero .stat-4 {
+        bottom: 2%;
+        left: -8%;
+        animation-delay: 0.5s;
+      }
+      .phone-hero .stat-extra {
+        position: absolute;
+        font-size: 11px;
+        padding: 5px 12px;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 100px;
+        color: #94a3b8;
+        pointer-events: none;
+        animation: floatBadge 5s ease-in-out infinite alternate;
+        z-index: 10;
+        white-space: nowrap;
+      }
+      .phone-hero .stat-extra-1 {
+        top: 52%;
+        left: -4%;
+        animation-delay: 1.2s;
+      }
+      .phone-hero .stat-extra-2 {
+        bottom: 42%;
+        right: -4%;
+        animation-delay: 0.3s;
+      }
+
+      /* Animations */
+      @keyframes floatMain {
+        0% {
+          transform: translateY(0px) rotateX(2deg) rotateY(-2deg);
+        }
+        50% {
+          transform: translateY(-18px) rotateX(-3deg) rotateY(3deg);
+        }
+        100% {
+          transform: translateY(0px) rotateX(2deg) rotateY(-2deg);
+        }
+      }
+      @keyframes glowPulse {
+        0% {
+          opacity: 0.6;
+          transform: translate(-50%, -50%) scale(0.95);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1.15);
+        }
+      }
+      @keyframes pulseIcon {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+      @keyframes spinRing {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+      @keyframes floatBadge {
+        0% {
+          transform: translateY(0px) translateX(0px);
+        }
+        100% {
+          transform: translateY(-12px) translateX(5px);
+        }
+      }
+
+      /* Responsive adjustments for phone component inside hero */
+      @media (max-width: 1024px) {
+        .phone-hero .phone {
+          width: 190px;
+          height: 390px;
+        }
+        .phone-hero .glow-1 {
+          width: 280px;
+          height: 280px;
+        }
+        .phone-hero .glow-2 {
+          width: 200px;
+          height: 200px;
+        }
+        .phone-hero .glow-3 {
+          width: 240px;
+          height: 240px;
+        }
+        .phone-hero .orbit-ring {
+          width: 320px;
+          height: 320px;
+        }
+        .phone-hero .stat-1 {
+          right: -4%;
+        }
+        .phone-hero .stat-2 {
+          left: -8%;
+        }
+        .phone-hero .stat-3 {
+          right: -6%;
+        }
+        .phone-hero .stat-4 {
+          left: -4%;
+        }
+        .phone-hero .stat-extra-1,
+        .phone-hero .stat-extra-2 {
+          display: none;
+        }
+        .phone-hero .stat-badge {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+        .phone-hero .stat-badge .stat-icon {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 768px) {
+        .phone-hero {
+          min-height: 420px;
+        }
+        .phone-hero .phone {
+          width: 160px;
+          height: 340px;
+          padding: 8px;
+          border-radius: 32px;
+        }
+        .phone-hero .phone-screen {
+          border-radius: 26px;
+          padding: 12px 10px;
+        }
+        .phone-hero .app-header h4 {
+          font-size: 13px;
+        }
+        .phone-hero .app-header .notif-badge {
+          width: 22px;
+          height: 22px;
+          font-size: 11px;
+        }
+        .phone-hero .product-img {
+          width: 48px;
+          height: 48px;
+          font-size: 24px;
+          border-radius: 14px;
+          margin-bottom: 6px;
+        }
+        .phone-hero .product-title h3 {
+          font-size: 13px;
+        }
+        .phone-hero .product-title .brand {
+          font-size: 10px;
+        }
+        .phone-hero .rating-price {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2px;
+          margin: 6px 0 8px;
+        }
+        .phone-hero .rating {
+          font-size: 11px;
+        }
+        .phone-hero .price {
+          font-size: 14px;
+        }
+        .phone-hero .price small {
+          font-size: 10px;
+        }
+        .phone-hero .specs {
+          padding: 6px 8px;
+          border-radius: 12px;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .phone-hero .spec-item .value {
+          font-size: 11px;
+        }
+        .phone-hero .spec-item .label {
+          font-size: 8px;
+        }
+        .phone-hero .btn-cart {
+          font-size: 12px;
+          padding: 9px 0;
+        }
+        .phone-hero .orbit-ring {
+          width: 240px;
+          height: 240px;
+        }
+        .phone-hero .orbit-dot {
+          width: 6px;
+          height: 6px;
+          top: -3px;
+        }
+        .phone-hero .glow-1 {
+          width: 200px;
+          height: 200px;
+          filter: blur(40px);
+        }
+        .phone-hero .glow-2 {
+          width: 150px;
+          height: 150px;
+          filter: blur(40px);
+        }
+        .phone-hero .glow-3 {
+          width: 180px;
+          height: 180px;
+          filter: blur(40px);
+        }
+        .phone-hero .stat-badge {
+          font-size: 10px;
+          padding: 4px 10px;
+          gap: 5px;
+        }
+        .phone-hero .stat-badge .stat-icon {
+          font-size: 12px;
+        }
+        .phone-hero .stat-1 {
+          top: -2%;
+          right: 0%;
+        }
+        .phone-hero .stat-2 {
+          top: 18%;
+          left: -6%;
+        }
+        .phone-hero .stat-3 {
+          bottom: 12%;
+          right: -2%;
+        }
+        .phone-hero .stat-4 {
+          bottom: -2%;
+          left: -4%;
+        }
+      }
+      @media (max-width: 480px) {
+        .phone-hero {
+          min-height: 380px;
+        }
+        .phone-hero .phone {
+          width: 140px;
+          height: 300px;
+          padding: 6px;
+          border-radius: 28px;
+        }
+        .phone-hero .phone-screen {
+          border-radius: 22px;
+          padding: 10px 8px;
+        }
+        .phone-hero .app-header h4 {
+          font-size: 11px;
+        }
+        .phone-hero .app-header .notif-badge {
+          width: 18px;
+          height: 18px;
+          font-size: 9px;
+        }
+        .phone-hero .app-header .notif-badge::after {
+          width: 5px;
+          height: 5px;
+        }
+        .phone-hero .product-img {
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          border-radius: 12px;
+          margin-bottom: 4px;
+        }
+        .phone-hero .product-title h3 {
+          font-size: 11px;
+        }
+        .phone-hero .product-title .brand {
+          font-size: 8px;
+        }
+        .phone-hero .rating {
+          font-size: 9px;
+        }
+        .phone-hero .rating span {
+          font-size: 8px;
+        }
+        .phone-hero .price {
+          font-size: 12px;
+        }
+        .phone-hero .price small {
+          font-size: 9px;
+        }
+        .phone-hero .spec-item .value {
+          font-size: 10px;
+        }
+        .phone-hero .spec-item .label {
+          font-size: 7px;
+        }
+        .phone-hero .btn-cart {
+          font-size: 10px;
+          padding: 7px 0;
+        }
+        .phone-hero .stat-badge {
+          font-size: 8px;
+          padding: 3px 8px;
+          gap: 4px;
+          border-radius: 20px;
+        }
+        .phone-hero .stat-badge .stat-icon {
+          font-size: 10px;
+        }
+        .phone-hero .stat-1 {
+          top: -4%;
+          right: -2%;
+        }
+        .phone-hero .stat-2 {
+          top: 14%;
+          left: -8%;
+        }
+        .phone-hero .stat-3 {
+          bottom: 8%;
+          right: -4%;
+        }
+        .phone-hero .stat-4 {
+          bottom: -4%;
+          left: -6%;
+        }
+        .phone-hero .orbit-ring {
+          width: 180px;
+          height: 180px;
+        }
+        .phone-hero .orbit-dot {
+          width: 5px;
+          height: 5px;
+          top: -2.5px;
+        }
+        .phone-hero .glow-1 {
+          width: 150px;
+          height: 150px;
+          filter: blur(30px);
+        }
+        .phone-hero .glow-2 {
+          width: 100px;
+          height: 100px;
+          filter: blur(30px);
+        }
+        .phone-hero .glow-3 {
+          width: 120px;
+          height: 120px;
+          filter: blur(30px);
+        }
+      }
+    </style>
+  </head>
+  <body class="font-body-sm overflow-x-hidden">
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-surface/60 dark:bg-surface/60 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm"
+    >
+      <div
+        class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+      >
+        <!-- Left Section: Logo and Brand Name -->
+        <div class="flex items-center gap-3">
+          <!-- Brand Logo Link -->
+          <a
+            href="./index.html"
+            class="flex items-center mb-2 md:mb-0 text-white no-underline"
+          >
+            <img
+              src="./Assets/Brand Logo.jpg"
+              alt="Mozeez gadgets hub Brand Logo"
+              class="w-20 h-15 object-contain"
+          /></a>
+
+          <!-- Brand Name Text - shrinks and disappears on scroll on mobile -->
+          <div
+            id="brandName"
+            class="font-h2 text-h2 font-bold tracking-tighter text-on-surface dark:text-on-surface transition-all duration-300 md:text-h2 text-xl md:opacity-100"
+          >
+            Mozeez Gadgets Hub
+          </div>
+        </div>
+
+        <!-- Right Section: Hamburger + Navigation -->
+        <div class="flex items-center gap-4">
+          <!-- Hamburger Button (mobile) -->
+          <button
+            id="hamburgerBtn"
+            class="md:hidden text-on-surface hover:text-primary focus:outline-none transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Desktop Navigation Links -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              class="text-primary font-bold border-b-2 border-primary pb-1 font-body-sm text-body-sm"
+              href="./index.html"
+              >Home</a
+            >
+            <a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm"
+              href="./shopping page.html"
+              >Shop</a
+            >
+            <a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm"
+              href="#services"
+              >Repairs</a
+            >
+            <a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm"
+              href="#services"
+              >Services</a
+            >
+            <a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm"
+              href="#services"
+              >Support</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu (hidden by default) -->
+      <div
+        id="mobileMenu"
+        class="md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/10 px-margin-mobile py-4 hidden flex-col items-start gap-4"
+      >
+        <a
+          class="text-primary font-bold border-b-2 border-primary pb-1 font-body-sm text-body-sm w-full"
+          href="./index.html"
+          >Home</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm w-full"
+          href="./shopping page.html"
+          >Shop</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm w-full"
+          href="#services"
+          >Repairs</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm w-full"
+          href="#services"
+          >Services</a
+        >
+        <a
+          class="text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm w-full"
+          href="#services"
+          >Support</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section with floating phone -->
+    <section
+      class="relative min-h-screen flex items-center pt-24 overflow-hidden"
+    >
+      <!-- Shader background (unchanged) -->
+      <div
+        class="absolute inset-0 w-full h-full z-0 opacity-40"
+        style="display: block"
+      >
+        <canvas
+          id="shader-canvas-ANIMATION_1"
+          style="display: block; width: 100%; height: 100%"
+        ></canvas>
+        <script>
+          (function () {
+            const canvas = document.getElementById("shader-canvas-ANIMATION_1");
+            function syncSize() {
+              const w = canvas.clientWidth || 1280;
+              const h = canvas.clientHeight || 720;
+              if (canvas.width !== w || canvas.height !== h) {
+                canvas.width = w;
+                canvas.height = h;
+              }
+            }
+            if (typeof ResizeObserver !== "undefined") {
+              new ResizeObserver(syncSize).observe(canvas);
+            }
+            syncSize();
+            const gl =
+              canvas.getContext("webgl") ||
+              canvas.getContext("experimental-webgl");
+            if (!gl) return;
+            const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+            const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+void main() {
+    vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+    float time = u_time * 0.2;
+    
+    // Create a flowing cosmic blue gradient
+    vec3 color1 = vec3(0.039, 0.059, 0.122); // #0A0F1F
+    vec3 color2 = vec3(0.145, 0.388, 0.922); // #2563EB
+    vec3 color3 = vec3(0.067, 0.094, 0.153); // #111827
+    
+    float noise = sin(uv.x * 3.0 + time) * cos(uv.y * 2.0 - time * 0.5);
+    noise += sin(uv.y * 4.0 + time * 0.7) * cos(uv.x * 3.5 + time);
+    
+    vec3 finalColor = mix(color1, color3, uv.y);
+    finalColor = mix(finalColor, color2 * 0.15, noise * 0.5 + 0.5);
+    
+    // Add a subtle glow highlight
+    float glow = 1.0 - length(uv - vec2(0.5, 0.8));
+    finalColor += color2 * pow(max(0.0, glow), 4.0) * 0.2;
+    
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+            function cs(type, src) {
+              const s = gl.createShader(type);
+              gl.shaderSource(s, src);
+              gl.compileShader(s);
+              return s;
+            }
+            const prog = gl.createProgram();
+            gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+            gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+            gl.linkProgram(prog);
+            gl.useProgram(prog);
+            const buf = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+            gl.bufferData(
+              gl.ARRAY_BUFFER,
+              new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]),
+              gl.STATIC_DRAW,
+            );
+            const pos = gl.getAttribLocation(prog, "a_position");
+            gl.enableVertexAttribArray(pos);
+            gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+            const uTime = gl.getUniformLocation(prog, "u_time");
+            const uRes = gl.getUniformLocation(prog, "u_resolution");
+            const uMouse = gl.getUniformLocation(prog, "u_mouse");
+            let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+            window.addEventListener("mousemove", (event) => {
+              const rect = canvas.getBoundingClientRect();
+              if (rect.width && rect.height) {
+                const nx = (event.clientX - rect.left) / rect.width;
+                const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+                mouse.x = nx * canvas.width;
+                mouse.y = ny * canvas.height;
+              }
+            });
+            function render(t) {
+              if (typeof ResizeObserver === "undefined") syncSize();
+              gl.viewport(0, 0, canvas.width, canvas.height);
+              if (uTime) gl.uniform1f(uTime, t * 0.001);
+              if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+              if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+              gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+              requestAnimationFrame(render);
+            }
+            render(0);
+          })();
+        </script>
+      </div>
+
+      <!-- Hero content: left text, right phone -->
+      <div
+        class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16"
+        >
+          <!-- Left column: heading, subheading, CTA -->
+          <div class="flex-1 text-left max-w-2xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 mb-6"
+            >
+              <span
+                class="w-4 h-5 rounded-full bg-primary animate-pulse"
+              ></span>
+              <span
+                class="font-mono-label text-mono-label text-primary uppercase tracking-widest"
+                >Certified Quality You Can Trust.</span
+              >
+            </div>
+            <h1
+              class="font-hero text-hero-mobile md:text-hero mb-6 tracking-tighter text-on-surface"
+            >
+              Upgrade to the
+              <span class="text-primary">Best.</span>
+            </h1>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl"
+            >
+              Your one-stop shop for the latest, high-performance laptops and
+              mobile devices.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="./shopping page.html">
+                <button
+                  class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:accent-glow transition-all active:scale-95 group"
+                >
+                  Shop Now
+                  <span
+                    class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                    >arrow_forward</span
+                  >
+                </button></a
+              >
+              <a href="#services">
+                <button
+                  class="border border-outline-variant/30 text-on-surface px-8 py-4 rounded-xl font-bold backdrop-blur-md hover:bg-surface-variant/30 transition-all active:scale-95"
+                >
+                  Book Repair
+                </button></a
+              >
+            </div>
+          </div>
+
+          <!-- Right column: floating phone component -->
+          <div class="flex-1 flex justify-center lg:justify-end">
+            <div class="phone-hero w-full max-w-[500px]">
+              <!-- Glows -->
+              <div class="glow-ring glow-1"></div>
+              <div class="glow-ring glow-2"></div>
+              <div class="glow-ring glow-3"></div>
+
+              <!-- Orbit -->
+              <div class="orbit-ring">
+                <span class="orbit-dot"></span>
+                <span class="orbit-dot"></span>
+                <span class="orbit-dot"></span>
+                <span class="orbit-dot"></span>
+              </div>
+
+              <!-- Stats badges -->
+              <div class="stat-badge stat-1">
+                <span class="stat-icon">⭐</span>
+                <span
+                  ><span class="stat-number">4.8</span>
+                  <span class="stat-label">Rating</span></span
+                >
+              </div>
+              <div class="stat-badge stat-2">
+                <span class="stat-icon">⚡</span>
+                <span
+                  ><span class="stat-number">2.5x</span>
+                  <span class="stat-label">Faster</span></span
+                >
+              </div>
+              <div class="stat-badge stat-3">
+                <span class="stat-icon">📦</span>
+                <span
+                  ><span class="stat-number">350+</span>
+                  <span class="stat-label">Sold</span></span
+                >
+              </div>
+              <div class="stat-badge stat-4">
+                <span class="stat-icon">🛡️</span>
+                <span
+                  ><span class="stat-number">100%</span>
+                  <span class="stat-label">Secure</span></span
+                >
+              </div>
+
+              <div class="stat-extra stat-extra-1">✨ AI-powered</div>
+              <div class="stat-extra stat-extra-2">📱 iOS & Android</div>
+
+              <!-- Phone -->
+              <div class="phone-wrapper" id="phoneWrapper">
+                <div class="phone" id="phone">
+                  <div class="phone-screen">
+                    <div class="app-header">
+                      <h4>Mozeez Gadget Hub</h4>
+                      <div class="notif-badge">🔔</div>
+                    </div>
+                    <div class="product-img">🎧</div>
+                    <div class="product-title">
+                      <h3>Wireless Earbuds Pro</h3>
+                      <span class="brand">by Mozeez Gadgets</span>
+                    </div>
+                    <div class="rating-price">
+                      <div class="rating">★★★★★ <span>4.8 (246)</span></div>
+                      <div class="price">N25,000.00 <small>$129.99</small></div>
+                    </div>
+                    <div class="specs">
+                      <div class="spec-item">
+                        <div class="value">🔋 8h</div>
+                        <div class="label">Battery</div>
+                      </div>
+                      <div class="spec-item">
+                        <div class="value">🎵 ANC</div>
+                        <div class="label">Noise Cancel</div>
+                      </div>
+                      <div class="spec-item">
+                        <div class="value">📶 5.3</div>
+                        <div class="label">Bluetooth</div>
+                      </div>
+                    </div>
+                    <div class="btn-cart">🛒 Add to Cart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tilt JavaScript (works for both mouse and touch) -->
+    <script>
+      (function () {
+        const phoneWrapper = document.getElementById("phoneWrapper");
+        if (!phoneWrapper) return;
+        const parent = phoneWrapper.closest(".phone-hero");
+        let isTouching = false;
+
+        // Mouse
+        parent.addEventListener("mousemove", (e) => {
+          const rect = parent.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          phoneWrapper.style.transform = `rotateX(${y * -12}deg) rotateY(${x * 12}deg)`;
+        });
+        parent.addEventListener("mouseleave", () => {
+          phoneWrapper.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        });
+
+        // Touch
+        parent.addEventListener(
+          "touchstart",
+          (e) => {
+            isTouching = true;
+            const touch = e.touches[0];
+            const rect = parent.getBoundingClientRect();
+            const x = (touch.clientX - rect.left) / rect.width - 0.5;
+            const y = (touch.clientY - rect.top) / rect.height - 0.5;
+            phoneWrapper.style.transition = "transform 0.05s ease-out";
+            phoneWrapper.style.transform = `rotateX(${y * -12}deg) rotateY(${x * 12}deg)`;
+          },
+          { passive: true },
+        );
+        parent.addEventListener(
+          "touchmove",
+          (e) => {
+            if (!isTouching) return;
+            const touch = e.touches[0];
+            const rect = parent.getBoundingClientRect();
+            const x = (touch.clientX - rect.left) / rect.width - 0.5;
+            const y = (touch.clientY - rect.top) / rect.height - 0.5;
+            phoneWrapper.style.transform = `rotateX(${y * -12}deg) rotateY(${x * 12}deg)`;
+          },
+          { passive: true },
+        );
+        parent.addEventListener(
+          "touchend",
+          () => {
+            isTouching = false;
+            phoneWrapper.style.transition =
+              "transform 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28)";
+            phoneWrapper.style.transform = `rotateX(0deg) rotateY(0deg)`;
+            setTimeout(() => {
+              phoneWrapper.style.transition = "transform 0.05s ease-out";
+            }, 400);
+          },
+          { passive: true },
+        );
+      })();
+    </script>
+    <!-- Scroll indicator -->
+    <div
+      class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50"
+    >
+      <span class="font-mono-label text-mono-label uppercase tracking-widest"
+        >Explore Hub</span
+      >
+      <div class="w-px h-12 bg-gradient-to-b from-primary to-transparent"></div>
+    </div>
+
+    <!-- Statistics Section - grid-cols-3 on mobile -->
+    <section
+      class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+    >
+      <div class="grid grid-cols-3 gap-4 md:gap-6">
+        <div class="glass p-4 md:p-8 rounded-2xl reveal hover-accent-glow">
+          <span
+            class="material-symbols-outlined text-3xl md:text-4xl text-primary mb-2 md:mb-4"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >groups</span
+          >
+          <div class="font-h1 text-h1-mobile text-on-surface mb-0 md:mb-1">
+            300+
+          </div>
+          <div
+            class="text-on-surface-variant font-body-sm uppercase tracking-widest text-[10px] md:text-xs"
+          >
+            Happy Customers
+          </div>
+        </div>
+        <div
+          class="glass p-4 md:p-8 rounded-2xl reveal hover-accent-glow"
+          style="transition-delay: 100ms"
+        >
+          <span
+            class="material-symbols-outlined text-3xl md:text-4xl text-primary mb-2 md:mb-4"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >support_agent</span
+          >
+          <div class="font-h1 text-h1-mobile text-on-surface mb-0 md:mb-1">
+            24/7
+          </div>
+          <div
+            class="text-on-surface-variant font-body-sm uppercase tracking-widest text-[10px] md:text-xs"
+          >
+            Expert Support
+          </div>
+        </div>
+        <div
+          class="glass p-4 md:p-8 rounded-2xl reveal hover-accent-glow"
+          style="transition-delay: 200ms"
+        >
+          <span
+            class="material-symbols-outlined text-3xl md:text-4xl text-primary mb-2 md:mb-4"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >verified</span
+          >
+          <div class="font-h1 text-h1-mobile text-on-surface mb-0 md:mb-1">
+            100%
+          </div>
+          <div
+            class="text-on-surface-variant font-body-sm uppercase tracking-widest text-[10px] md:text-xs"
+          >
+            Genuine Parts
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section - grid-cols-3 on mobile -->
+    <section
+      class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto dot-matrix"
+    >
+      <div class="flex justify-between items-end mb-16 reveal">
+        <div>
+          <h2 class="font-h1 text-h1-mobile md:text-h1 text-on-surface">
+            High-Performance Tech
+          </h2>
+          <p class="text-on-surface-variant font-body-sm md:font-body-lg">
+            Only the finest specifications, Selected for professionals.
+          </p>
+        </div>
+        <a
+          class="text-primary font-bold flex items-center gap-1 hover:underline underline-offset-4 hidden md:flex"
+          href="./shopping page.html"
+        >
+          View All Catalog
+          <span class="material-symbols-outlined">chevron_right</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <!-- Card 1 -->
+        <div
+          class="glass rounded-2xl overflow-hidden reveal group hover-accent-glow"
+        >
+          <div class="aspect-square relative overflow-hidden">
+            <img
+              class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+              src="../Assets/Hp Elitebook 840 G4.jpg"
+              alt="Hp Elitebook 840 G4 Image"
+            />
+            <div
+              class="absolute top-4 right-4 px-3 py-1 rounded-full glass text-primary font-mono-label text-xs uppercase"
+            >
+              New Arrival
+            </div>
+          </div>
+          <div class="p-4 md:p-6">
+            <h3 class="font-h2 text-h2-mobile md:text-h2 text-on-surface mb-2">
+              Hp Elitebook 840 G4
+            </h3>
+            <p class="text-on-surface-variant text-body-sm mb-6">
+              Intel Core i5 <br />
+              7th Generation <br />
+              2.71GHz Processor Speed <br />
+              8gb Ram <br />
+              256gb SSD <br />
+              Windows 11 Pro <br />
+              64-bit Operating System <br />
+              Keyboard Light <br />
+              Battery Life 99 Perccent <br />
+              14 inches Display <br />
+              HD webcam <br />
+              Fingerprint <br />
+              3.0 USB & HDMI Port <br />
+              Bluetooth & Type C Port <br />
+              Comes with original charger
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-primary font-bold text-xl">N260,000.00</span>
+              <a
+                data-whatsapp="Hello Mozeez, I am interested in purchasing the Hp Elitebook 840 G4 . Let me know how to pay."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cursor-pointer flex items-center justify-center ..."
+              >
+                <button
+                  class="bg-primary-container text-on-primary-container p-2 rounded-lg hover:bg-primary hover:text-on-primary transition-colors"
+                >
+                  Order on WhatsApp
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="glass rounded-2xl overflow-hidden reveal group hover-accent-glow"
+          style="transition-delay: 100ms"
+        >
+          <div class="aspect-square relative overflow-hidden">
+            <video
+              class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+              src="../Assets/Hp Omen 15.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            >
+              Your browser does not support the video tag
+            </video>
+
+            <div
+              class="absolute top-4 right-4 px-3 py-1 rounded-full glass text-on-surface font-mono-label text-xs uppercase"
+            >
+              Best Seller
+            </div>
+          </div>
+          <div class="p-4 md:p-6">
+            <h3 class="font-h2 text-h2-mobile md:text-h2 text-on-surface mb-2">
+              HP Omen 15
+            </h3>
+            <p class="text-on-surface-variant text-body-sm mb-6">
+              Minimal Design. Maximal Power. <br />
+              4gb Dedicated Graphics <br />
+              16gb Ram <br />
+              512gb SSD
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-primary font-bold text-xl">N1,500,000.00</span>
+              <a
+                data-whatsapp="Hello Mozeez, I am interested in purchasing the HP Omen 15. Let me know how to pay."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cursor-pointer flex items-center justify-center ..."
+              >
+                <button
+                  class="bg-primary-container text-on-primary-container p-2 rounded-lg hover:bg-primary hover:text-on-primary transition-colors"
+                >
+                  Order on WhatsApp
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="glass rounded-2xl overflow-hidden reveal group hover-accent-glow"
+          style="transition-delay: 200ms"
+        >
+          <div class="aspect-square relative overflow-hidden">
+            <img
+              class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+              data-alt="A top-down view of a pair of transparent wireless earbuds and their charging case resting on a textured carbon fiber surface. The internals of the earbuds are visible, showing copper coils and precise microchips. The scene is lit with a cool cyan glow, creating a technical, hardware-focused aesthetic."
+              src="../Assets/Onyx Studio 9.jpg"
+              alt="Onyx studio 9 image"
+            />
+          </div>
+          <div class="p-4 md:p-6">
+            <h3 class="font-h2 text-h2-mobile md:text-h2 text-on-surface mb-2">
+              Onyx Studio 9
+            </h3>
+            <p class="text-on-surface-variant text-body-sm mb-6">
+              The Art of Sound, Reimagined.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-primary font-bold text-xl">N250,000.00</span>
+              <a
+                data-whatsapp="Hello Mozeez, I am interested in purchasing the Onyx Studio 9. Let me know how to pay."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cursor-pointer flex items-center justify-center ..."
+                ><button
+                  class="bg-primary-container text-on-primary-container p-2 rounded-lg hover:bg-primary hover:text-on-primary transition-colors"
+                >
+                  Order on WhatsApp
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section - flex-row on mobile -->
+    <section
+      id="services"
+      class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+    >
+      <h2
+        class="font-h1 text-h1-mobile md:text-h1 text-on-surface mb-16 reveal"
+      >
+        Hub Ecosystem
+      </h2>
+      <div class="flex flex-col gap-6">
+        <!-- Service 1 -->
+        <div
+          class="glass p-4 md:p-8 rounded-2xl reveal flex flex-col md:flex-row items-center gap-4 md:gap-8 hover:bg-surface-variant/20 transition-colors"
+        >
+          <div
+            class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-primary/20 flex items-center justify-center flex-shrink-0"
+          >
+            <span
+              class="material-symbols-outlined text-primary text-3xl md:text-4xl"
+              >rebase_edit</span
+            >
+          </div>
+          <div class="flex-grow text-center md:text-left">
+            <h4 class="font-h2 text-h2-mobile md:text-h2 text-on-surface mb-2">
+              Gadget Repairs
+            </h4>
+            <p class="text-on-surface-variant text-body-sm md:text-body-lg">
+              Precision component replacement using certified OEM parts for
+              iPhones, Galaxies, Androids, Laptops and MacBooks.
+            </p>
+          </div>
+          <button
+            class="bg-primary-container text-on-primary-container px-4 md:px-6 py-2 md:py-3 rounded-lg font-bold flex-shrink-0"
+          >
+            <a
+              data-whatsapp="Hello Mozeez, I would like to book a maintenance or repair session for my device."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer flex items-center justify-center ..."
+            >
+              Book Repair
+            </a>
+          </button>
+        </div>
+        <!-- Service 2 -->
+        <div
+          class="glass p-4 md:p-8 rounded-2xl reveal flex flex-col md:flex-row items-center gap-4 md:gap-8 hover:bg-surface-variant/20 transition-colors"
+          style="transition-delay: 100ms"
+        >
+          <div
+            class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-secondary/20 flex items-center justify-center flex-shrink-0"
+          >
+            <span
+              class="material-symbols-outlined text-secondary text-3xl md:text-4xl"
+              >build_circle</span
+            >
+          </div>
+          <div class="flex-grow text-center md:text-left">
+            <h4 class="font-h2 text-h2-mobile md:text-h2 text-on-surface mb-2">
+              Device Maintenance
+            </h4>
+            <p class="text-on-surface-variant text-body-sm md:text-body-lg">
+              Annual performance tuning, deep cleaning, software upgrade and
+              battery health optimization for all your professional gear and
+              devices.
+            </p>
+          </div>
+          <a href="#faq">
+            <button
+              class="border border-outline-variant text-on-surface px-4 md:px-6 py-2 md:py-3 rounded-lg font-bold flex-shrink-0"
+            >
+              Learn More
+            </button></a
+          >
+        </div>
+        <!-- Service 3 -->
+        <div
+          class="glass p-4 md:p-8 rounded-2xl reveal flex flex-col md:flex-row items-center gap-4 md:gap-8 hover:bg-surface-variant/20 transition-colors"
+          style="transition-delay: 200ms"
+        >
+          <div
+            class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-tertiary/20 flex items-center justify-center flex-shrink-0"
+          >
+            <span
+              class="material-symbols-outlined text-tertiary text-3xl md:text-4xl"
+              >headset_mic</span
+            >
+          </div>
+          <div class="flex-grow text-center md:text-left">
+            <h4 class="font-h2 text-h2-mobile md:text-h2 text-on-surface mb-2">
+              Customer Support
+            </h4>
+            <p class="text-on-surface-variant text-body-sm md:text-body-lg">
+              Direct access to our senior engineering team for troubleshooting
+              and configuration help.
+            </p>
+          </div>
+          <a
+            href="https://wa.me/2349155859442?text=Hello%20Mozeez%2C%20I%20have%20a%20quick%20question%20about%20your%20gadgets%20or%20services."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              class="border border-outline-variant text-on-surface px-4 md:px-6 py-2 md:py-3 rounded-lg font-bold flex-shrink-0"
+            >
+              Chat Live
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Trust Timeline -->
+    <section
+      class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative"
+    >
+      <div class="text-center mb-16">
+        <h2 class="font-h1 text-h1-mobile md:text-h1 text-on-surface mb-4">
+          The Evolution
+        </h2>
+        <p class="text-on-surface-variant font-body-sm md:font-body-lg">
+          Our roadmap from a local workshop to a global technology hub.
+        </p>
+      </div>
+      <div class="relative max-w-4xl mx-auto py-10">
+        <div
+          class="absolute left-1/2 top-0 bottom-0 timeline-line -translate-x-1/2"
+        ></div>
+        <!-- Milestone 1 -->
+        <div class="relative flex items-center justify-between mb-24 reveal">
+          <div class="w-[45%] text-right pr-12 hidden md:block">
+            <h4 class="font-h2 text-h2 text-primary">2023</h4>
+            <p class="text-on-surface-variant">
+              Founded as a precision repair lab specializing in complex
+              microscopic logic board fixes.
+            </p>
+          </div>
+          <div
+            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10"
+          ></div>
+          <div class="w-full md:w-[45%] pl-12 md:text-left text-center">
+            <div class="md:hidden mb-2">
+              <h4 class="font-h2 text-h2 text-primary">2024</h4>
+            </div>
+            <div class="glass p-6 rounded-xl inline-block md:block">
+              <span class="material-symbols-outlined text-primary mb-2"
+                >rocket_launch</span
+              >
+              <p class="font-body-sm font-bold">
+                Inception &amp; First Lab Launch
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Milestone 2 -->
+        <div
+          class="relative flex items-center justify-between mb-24 reveal"
+          style="transition-delay: 150ms"
+        >
+          <div class="w-full md:w-[45%] pr-12 md:text-right text-center">
+            <div class="md:hidden mb-2">
+              <h4 class="font-h2 text-h2 text-primary">2022</h4>
+            </div>
+            <div class="glass p-6 rounded-xl inline-block md:block">
+              <span class="material-symbols-outlined text-primary mb-2"
+                >inventory_2</span
+              >
+              <p class="font-body-sm font-bold">Retail Expansion</p>
+            </div>
+          </div>
+          <div
+            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10"
+          ></div>
+          <div class="w-[45%] pl-12 hidden md:block">
+            <h4 class="font-h2 text-h2 text-primary">2024</h4>
+            <p class="text-on-surface-variant">
+              Became an authorized retailer for top-tier flagship hardware,
+              focusing on high-performance setups.
+            </p>
+          </div>
+        </div>
+        <!-- Milestone 3 -->
+        <div
+          class="relative flex items-center justify-between reveal"
+          style="transition-delay: 300ms"
+        >
+          <div class="w-[45%] text-right pr-12 hidden md:block">
+            <h4 class="font-h2 text-h2 text-primary">2025</h4>
+            <p class="text-on-surface-variant">
+              Launched an all-in-one platform for device trade-ins, tech
+              support, and AI-powered care.
+            </p>
+          </div>
+          <div
+            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10 shadow-[0_0_15px_rgba(37,99,235,0.8)]"
+          ></div>
+          <div class="w-full md:w-[45%] pl-12 md:text-left text-center">
+            <div class="md:hidden mb-2">
+              <h4 class="font-h2 text-h2 text-primary">2025</h4>
+            </div>
+            <div class="glass p-6 rounded-xl inline-block md:block">
+              <span class="material-symbols-outlined text-primary mb-2"
+                >hub</span
+              >
+              <p class="font-body-sm font-bold">The Digital Hub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section
+      id="faq"
+      class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto"
+    >
+      <h2
+        class="font-h1 text-h1-mobile md:text-h1 text-center text-on-surface mb-16 reveal"
+      >
+        Frequently Asked
+      </h2>
+      <div class="space-y-4">
+        <!-- Item 1 -->
+        <div class="border-b border-outline-variant/30 reveal">
+          <button
+            class="w-full py-6 flex justify-between items-center text-left group faq-trigger"
+          >
+            <span class="font-h2 text-h2-mobile text-on-surface"
+              >What is the standard repair turnaround time?</span
+            >
+            <span
+              class="material-symbols-outlined text-on-surface-variant transition-transform group-active:scale-90 faq-icon"
+              >add</span
+            >
+          </button>
+          <div
+            class="max-h-0 overflow-hidden transition-all duration-300 faq-content"
+          >
+            <p class="pb-6 text-on-surface-variant font-body-lg">
+              Most standard repairs (screen, battery) are completed within 2-4
+              hours. Complex logic board issues typically require 3-5 business
+              days for thorough testing.
+            </p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div
+          class="border-b border-outline-variant/30 reveal"
+          style="transition-delay: 100ms"
+        >
+          <button
+            class="w-full py-6 flex justify-between items-center text-left group faq-trigger"
+          >
+            <span class="font-h2 text-h2-mobile text-on-surface"
+              >Do you use original factory parts?</span
+            >
+            <span
+              class="material-symbols-outlined text-on-surface-variant transition-transform faq-icon"
+              >add</span
+            >
+          </button>
+          <div
+            class="max-h-0 overflow-hidden transition-all duration-300 faq-content"
+          >
+            <p class="pb-6 text-on-surface-variant font-body-lg">
+              Yes, we strictly use OEM (Original Equipment Manufacturer) parts
+              for all flagship repairs to ensure performance, durability, and
+              warranty preservation.
+            </p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div
+          class="border-b border-outline-variant/30 reveal"
+          style="transition-delay: 200ms"
+        >
+          <button
+            class="w-full py-6 flex justify-between items-center text-left group faq-trigger"
+          >
+            <span class="font-h2 text-h2-mobile text-on-surface"
+              >Can I trade in my old device?</span
+            >
+            <span
+              class="material-symbols-outlined text-on-surface-variant transition-transform faq-icon"
+              >add</span
+            >
+          </button>
+          <div
+            class="max-h-0 overflow-hidden transition-all duration-300 faq-content"
+          >
+            <p class="pb-6 text-on-surface-variant font-body-lg">
+              Absolutely. We offer a competitive trade-in program. Bring your
+              device to our office at No.3 Ogbunabali road, Garrison,
+              Port-Harcourt for a precision diagnostic and immediate credit
+              towards your new purchase.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a
+      href="https://wa.me/2349155859442?text=Hello%20Mozeez%2C%20I%20have%20a%20quick%20question%20about%20your%20gadgets%20or%20services."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-[100] flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1ebe5a] text-white font-bold py-3 px-5 rounded-full shadow-2xl shadow-green-500/40 transition-all hover:scale-105 active:scale-95 border border-white/20 backdrop-blur-sm"
+    >
+      <!-- Official WhatsApp Logo (green circle + white handset/bubble) -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="28"
+        height="28"
+        fill="none"
+      >
+        <circle cx="12" cy="12" r="12" fill="#25D366" />
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          fill="white"
+        />
+      </svg>
+
+      <span>Chat with us</span>
+    </a>
+
+    <!-- Footer - reduced height on mobile (max-h-[33vh]) -->
+    <footer
+      class="bg-surface-container-lowest border-t border-outline-variant w-full py-8 md:py-16 mt-24 max-h-[33vh] md:max-h-none overflow-y-auto"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto items-start"
+      >
+        <!-- Left Column: Branding and Social Links -->
+        <div class="flex flex-col gap-2 md:gap-4">
+          <div
+            class="font-h2 text-h2-mobile md:text-h2 font-bold text-on-surface tracking-tighter"
+          >
+            Mozeez
+          </div>
+          <p
+            class="text-on-surface-variant font-body-sm max-w-xs leading-relaxed text-sm md:text-base"
+          >
+            Your one-stop shop for the latest, high-performance laptops and
+            mobile devices.
+          </p>
+          <div class="flex items-center gap-3 mt-2">
+            <a
+              href="https://wa.me/2349155859442?text=Hello%20Mozeez%2C%20I%20want%20to%20get%20a%20laptop%20/phone%20of%20this%20specifications."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all group"
+              title="Chat on WhatsApp"
+            >
+              <img
+                src="../Assets/whatsapp.svg"
+                alt="WhatsApp"
+                class="w-5 h-5 brightness-0 opacity-70 group-hover:opacity-100 transition-opacity"
+              />
+            </a>
+            <button
+              class="inline-flex items-center justify-center p-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all"
+              title="Share Website"
+            >
+              <span class="material-symbols-outlined text-[20px]">share</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Center Column: Products Links List -->
+        <div class="flex flex-col md:ml-auto">
+          <h4
+            class="font-bold text-on-surface mb-2 md:mb-4 uppercase tracking-widest text-[10px] md:text-[11px]"
+          >
+            Products
+          </h4>
+          <ul
+            class="flex flex-col gap-2 md:gap-3 text-on-surface-variant font-body-sm text-sm md:text-base"
+          >
+            <li>
+              <a
+                class="hover:text-primary transition-colors block py-0.5"
+                href="#"
+                >Smartphones</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors block py-0.5"
+                href="#"
+                >Laptops</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors block py-0.5"
+                href="#"
+                >Audio Gear</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors block py-0.5"
+                href="#"
+                >Accessories</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Row Bar -->
+      <div
+        class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-8 md:mt-16 pt-4 md:pt-8 border-t border-outline-variant text-center"
+      >
+        <p
+          class="text-on-surface-variant font-body-sm opacity-80 text-xs md:text-sm"
+        >
+          &copy; 2026 Mozeez Gadget Hub. Precision Engineering for the Digital
+          Age.
+        </p>
+      </div>
+    </footer>
+    <script>
+      // ==========================================
+      // CENTRAL WHATSAPP ROUTER CONFIGURATION
+      // ==========================================
+      const BUSINESS_PHONE = "2349155859442";
+
+      function initializeWhatsAppLinks() {
+        const whatsappElements = document.querySelectorAll("[data-whatsapp]");
+        whatsappElements.forEach((element) => {
+          const rawMessage = element.getAttribute("data-whatsapp");
+          const encodedMessage = encodeURIComponent(rawMessage);
+          const finalUrl = `https://wa.me/${BUSINESS_PHONE}?text=${encodedMessage}`;
+          element.setAttribute("href", finalUrl);
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", initializeWhatsAppLinks);
+      initializeWhatsAppLinks();
+
+      // Reveal on scroll logic
+      const observerOptions = {
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+
+      // Accordion Logic
+      document.querySelectorAll(".faq-trigger").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const content = trigger.nextElementSibling;
+          const icon = trigger.querySelector(".faq-icon");
+
+          document.querySelectorAll(".faq-content").forEach((other) => {
+            if (other !== content) {
+              other.style.maxHeight = null;
+              other.previousElementSibling.querySelector(
+                ".faq-icon",
+              ).innerText = "add";
+              other.previousElementSibling.querySelector(
+                ".faq-icon",
+              ).style.transform = "rotate(0deg)";
+            }
+          });
+
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.innerText = "add";
+            icon.style.transform = "rotate(0deg)";
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.innerText = "close";
+            icon.style.transform = "rotate(45deg)";
+          }
+        });
+      });
+
+      // Sticky Navbar Effect + Brand Name shrink on scroll
+      const brandName = document.getElementById("brandName");
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 20) {
+          nav.classList.add("bg-surface/90", "shadow-lg");
+          if (window.innerWidth < 768) {
+            brandName.classList.add("opacity-0", "scale-95");
+            brandName.classList.remove("opacity-100", "scale-100");
+          }
+        } else {
+          nav.classList.remove("bg-surface/90", "shadow-lg");
+          if (window.innerWidth < 768) {
+            brandName.classList.remove("opacity-0", "scale-95");
+            brandName.classList.add("opacity-100", "scale-100");
+          }
+        }
+      });
+
+      // Hamburger toggle
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      // Close menu on link click
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+
+    <script src="js/common.js"></script>
+  </body>
+</html>
